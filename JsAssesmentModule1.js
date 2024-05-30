@@ -45,6 +45,7 @@ function getTotalSupply() {
 mintNFT(1, "CoolNFT1", "orange", "jeans", "diamond", "5'10", "80 kgs");
 mintNFT(2, "AwesomeNFT2", "green", "shorts", "gold", "6'2", "52 kgs");
 mintNFT(3, "EpicNFT3", "red", "slacks", "platinum", "5'8", "72 kgs");
+mintNFT(4, "SuperNFT4", "blue", "leggings", "silver", "5'2", "40 kgs");
 
 // List NFTs
 console.log("Listing NFTs:");
