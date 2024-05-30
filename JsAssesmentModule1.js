@@ -18,9 +18,11 @@ function mintNFT(id, name, eyeColor, trouserType, bling, height, weight) {
 }
 
 // Function to list NFTs
+
 function listNFTs() {
-    // Iterate through collection and print metadata
-    nftCollection.forEach(nft => {
+    // Iterate through collection and print metadata using a for loop
+    for (let i = 0; i < nftCollection.length; i++) {
+        let nft = nftCollection[i];
         console.log("ID: " + nft.id);
         console.log("Name: " + nft.name);
         console.log("Eye Color: " + nft.eyeColor);
@@ -29,8 +31,9 @@ function listNFTs() {
         console.log("Height: " + nft.height);
         console.log("Weight: " + nft.weight);
         console.log("-----------------------");
-    });
+    }
 }
+
 
 // Function to get total supply
 function getTotalSupply() {
@@ -39,9 +42,9 @@ function getTotalSupply() {
 }
 
 // Mint some NFTs
-mintNFT(1, "SuperCoolNFT1", "blue", "jeans", "diamond", "5'10", "52 kgs");
-mintNFT(2, "AwesomeNFT2", "red", "shorts", "gold", "6'2", "80 kgs");
-mintNFT(3, "EpicNFT3", "orange", "slacks", "silver", "5'8", "72kgs");
+mintNFT(1, "CoolNFT1", "blue", "jeans", "diamond", "5'10", "160 lbs");
+mintNFT(2, "AwesomeNFT2", "green", "shorts", "gold", "6'2", "180 lbs");
+mintNFT(3, "EpicNFT3", "brown", "slacks", "platinum", "5'8", "150 lbs");
 
 // List NFTs
 console.log("Listing NFTs:");
@@ -49,3 +52,4 @@ listNFTs();
 
 // Print total supply
 console.log("Total NFTs minted: " + getTotalSupply());
+
